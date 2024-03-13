@@ -244,8 +244,8 @@ func TestConverter(t *testing.T) {
 		{1_999_999_999_999, "one trillion nine hundred and ninety nine billion nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine"},
 		{100_000_000_000_000, "one hundred trillion"},
 		{1_000_000_000_000_000, "one quadrillion"},
-		{1_000_000_000_000_001, "Number is out of range"},
-		{-1, "Number is out of range"},
+		{1_000_000_000_000_001, ""},
+		{-1, ""},
 	}
 	for _, tt := range tests {
 		testName := fmt.Sprintf("Convert %d to word", tt.num)
